@@ -220,7 +220,7 @@ button {
   height: 300px;
   border: 5px solid var(--blue-color);
   border-radius: var(--border-radius-circle);
-  background: url(Lokesh.jpg);
+  background: url(images/Lokesh.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
