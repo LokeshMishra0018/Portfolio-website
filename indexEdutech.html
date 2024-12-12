@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>EduTech</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styleEdutech.css">
+	<!-- <script type="text/javascript" src="script.js"></script> -->
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="nav-left">
+				<button class="nav-button secondary-button">Explore</button>
+				<input type="search" placeholder="Search">
+			</div>
+		
+			<div class="logo">
+				<img src="https://i.postimg.cc/C1DyYPd3/Edutech1.png" alt="Edutech Logo" style="width: auto; height: auto; max-width: 200px;">
+			</div>
+		
+			<div class="nav-right">
+				<button class="nav-button secondary-button">Donate</button>
+				<!-- Log in button -->
+				<a href="loginEdutech.html" class="nav-button secondary-button">Log in</a>
+				<button class="nav-button primary-button">Sign up</button>
+			</div>
+		</nav>
+		
+		<div class="head-container">
+			<div class="quote">
+				<p>Edutech unlesashes : "Empowering teamwork enhancing learning and breaking barriers in innovations"</p>
+				<h5>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research!</h5>
+			</div>
+			<div class="svg-image">
+				<img src="https://i.postimg.cc/9fmvk6R0/Whats-App-Image-2024-11-21-at-20-18-09-10025725.jpg" alt="Student learning">
+			</div>
+		</div>
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+			<div class="user">
+				<img src="images/creator/roshan.jpeg" alt="Username">
+				<p>roshank9419</p>
+			</div>
+			<ul>
+				<li><a href="#about_section">About</a></li>
+				<li><a href="#portfolio_section">Portfolio</a></li>
+				<li><a href="#team_section">Team</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+				<li><a href="#feedBACK">Feedback</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+<!-- Some Popular Subjects -->
+	<div class="title">
+		<span>Popular Topics To Explore</span>
+	</div>
+	<br><br>
+	<div class="course">
+		<center><div class="cbox">
+		<div class="det"><a href="subjects/jee.html"><img src="images/courses/book.png">Web Development</a></div>
+		<div class="det"><a href="subjects/gate.html"><img src="images/courses/d1.png">Python</a></div>
+		<div class="det"><a href="subjects/jee.html#sample_papers"><img src="images/courses/paper.png">Java</a></div>
+		<div class="det"><a href="subjects/quiz.html"><img src="images/courses/d1.png">C++</a></div>
+		</div></center>
+		<div class="cbox">
+		<div class="det"><a href="subjects/computer_courses.html"><img src="images/courses/computer.png">Android Development</a></div>
+		<div class="det"><a href="subjects/computer_courses.html#data"><img src="images/courses/data.png">Machine Learning</a></div>
+		<div class="det"><a href="subjects/computer_courses.html#algo"><img src="images/courses/algo.png">Graphic Desigining</a></div>
+		<div class="det det-last"><a href="subjects/computer_courses.html#projects"><img src="images/courses/projects.png">Imp DSA Questions</a></div>
+		</div>
+	</div>
+
+	
+
+
+
+
+
+<!-- SERVICES -->
+	<div class="service-swipe">
+		<div class="diffSection" id="services_section">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Services</p></center>
+		</div>
+		<a href="subjects/computer_courses.html"><div class="s-card"><img src="images/icon/computer-courses.png"><p>Free Study Material</p></div></a>
+		<a href="subjects/jee.html"><div class="s-card"><img src="images/icon/brainbooster.png"><p>Connect With Your Mentors</p></div></a>
+		<a href="#"><div class="s-card"><img src="images/icon/online-tutorials.png"><p>Connect With Your Seniors</p></div></a>
+		<a href="subjects/jee.html#sample_papers"><div class="s-card"><img src="images/icon/papers.jpg"><p>AI Chat Support</p></div></a>
+		<a href="#"><div class="s-card"><img src="images/icon/p3.png"><p>University Sample Papers</p></div></a>
+		<a href="#contactus_section"><div class="s-card"><img src="images/icon/discussion.png"><p>Build Your Team</p></div></a>
+		<a href="subjects/quiz.html"><div class="s-card"><img src="images/icon/q1.png"><p>Donate Books Or Notes</p></div></a>
+		<a href="#contactus_section"><div class="s-card"><img src="images/icon/help.png"><p>Contribute To Edutech</p></div></a>
+	</div>
+	
+	<section class="chat-section">
+        <h2>Chat with our AI Tutor</h2>
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="ai-avatar">🤖</div>
+                <div>
+                    <h3>AI Tutor</h3>
+                    <small>Online - Ready to help</small>
+                </div>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message ai-message">
+                    Hello! I'm your AI tutor. How can I help you with your studies today?
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <textarea class="chat-input" id="chatInput" placeholder="Type your question here..."></textarea>
+                <button class="send-button" id="sendButton" disabled>Send</button>
+            </div>
+        </div>
+    </section>
+
+	<section class="travel-section">
+        <!-- Find Travel Partner Box -->
+        <div class="find-partner-box">
+            <h2>Find Your Project Team Mate</h2>
+            <form id="searchForm">
+                <div class="form-group">
+                    <label for="source">Project Theme</label>
+                    <input type="text" id="source" name="source" placeholder="Enter Theme" required />
+                </div>
+                <div class="form-group">
+                    <label for="destination">Technology Domain</label>
+                    <input type="text" id="destination" name="destination" placeholder="Enter " required />
+                </div>
+                <div class="form-row">
+                    
+                    <div class="form-group">
+                        <label for="gender">Gender Preference</label>
+                        <select id="gender" name="gender">
+							<option value="">Select</option>
+                            <option value="">Any</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="transportMode">Preferred Branch</label>
+                    <select id="transportMode" name="transportMode" required>
+                        <option value="">Select</option>
+                        <option value="Car">CSE</option>
+                        <option value="Bus">CS</option>
+                        <option value="Train">IT</option>
+                        <option value="Bike">EN</option>
+						<option value="Bike">Any</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Find Partner</button>
+            </form>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+    
+        <!-- Add Your Details Box -->
+        <div class="add-details-box">
+            <h2>Add Your Details To Be In A Team</h2>
+            <form id="addDetailsForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name" required />
+                </div>
+                <div class="form-group">
+                    <label for="source">Project Theme</label>
+                    <input type="text" id="source" name="source" placeholder="Enter Theme" required />
+                </div>
+                <div class="form-group">
+                    <label for="destination">Technology Domain</label>
+                    <input type="text" id="destination" name="destination" placeholder="Enter Domain" required />
+                </div>
+                <div class="form-group">
+					<label for="gender">Gender</label>
+					<select id="gender" name="gender">
+						<option value="">Select</option>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+					</select>
+				</div>
+                <div class="form-row">
+                    
+                    <div class="form-group">
+                        <label for="collegeYear">College Year</label>
+                        <select id="collegeYear" name="collegeYear" required>
+                            <option value="">Select</option>
+                            <option value="1st Year">1st Year</option>
+                            <option value="2nd Year">2nd Year</option>
+                            <option value="3rd Year">3rd Year</option>
+                            <option value="4th Year">4th Year</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="transportMode">Branch</label>
+                    <select id="transportMode" name="transportMode" required>
+                        <option value="">Select</option>
+                        <option value="Car">CSE</option>
+                        <option value="Bus">CS</option>
+                        <option value="Train">IT</option>
+                        <option value="Bike">EN</option>
+						<option value="Bike">Any</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Submit Details</button>
+            </form>
+            <div id="addDetailsFeedback" class="feedback"></div>
+        </div>
+    </section>
+	
+
+<!-- Reviews by Students -->
+<div id="makeitfull">
+	<a href="#review_section"><img src="images/icon/makeitfull.png"></a>
+</div>
+<div class="review">
+	<div class="diffSection" id="review_section">
+		<center><p style="font-size: 40px; padding: 100px; padding-bottom: 40px; color: #2E3D49;">Our Reviews</p></center>
+	</div>
+	<div class="rev-container">
+		<div class="rev-card">
+			<div class="identity">
+				<!-- <img src="images/creator/humanNotExist1.jpg"><p>Sophie Daniel</p> -->
+				<h2>Enter Your Review</h2>
+				<!-- <div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div> -->
+			</div>
+			<div class="rev-cont">
+				<!-- <p id="title">Review:</p> -->
+				<!-- <p id="content">
+					I did Java Fundamenetal course with Rishab Sir. It was a great experience. The brain teasers and assignments, actually the whole lot of content was really good. Some problems were challenging yet interesting. Was explained very well where ever I stuck...
+				</p> -->
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- CONTACT US -->
+	<div class="diffSection" id="contactus_section">
+		<center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+			<form action="mailto:roshank9419@gmail.com" method="post" enctype="text/plain">
+				<label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
+				<center>
+				<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+				</center>
+				<label>Email <span class="imp">*</span></label><br>
+				<input type="email" name="mail" style="width: 100%" required="required"><br>
+				<label>Message <span class="imp">*</span></label><br>
+				<input type="text" name="message" style="width: 100%" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #FA4B37, #DF2771); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20"><div class="marqu">“Education is the passport to the future, for tomorrow belongs to those who prepare for it today.” “Your attitude, not your aptitude, will determine your altitude.” “If you think education is expensive, try ignorance.” “The only person who is educated is the one who has learned how to learn …and change.”</div></marquee>
+
+<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="https://i.postimg.cc/C1DyYPd3/Edutech1.png" alt="Edutech Logo" style="width: 200px;">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="images/icon\fb.png"></a>
+					<a href="#"><img src="images/icon\insta.png"></a>
+					<a href="#"><img src="images/icon\tt.png"></a>
+					<a href="#"><img src="images/icon\ytube.png"></a>
+					<a href="#"><img src="images/icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2024 Created By Lokesh Kumar Mishra All Rights Reserved.</p>
+				<br><p><img src="images/icon/location.png"> Kiet Group Of Institutions<br>Ghaziabad, UttarPradesh - 201206</p><br>
+				<p><img src="images/icon/phone.png"> Phone Number<br><img src="images/icon/mail.png">&nbsp; mishralokesh0018@gmail.com</p>
+			</div>
+		</div>
+	</footer>
+	<script src="scriptEdutech.js"></script>
+</body>
+</html>

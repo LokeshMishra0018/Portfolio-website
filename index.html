@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Portfolio Website | MicroCoding</title>
+    <!-- Font awesome CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <!-- Swiper JS CSS link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <nav class="nav-bar">
+        <div class="section-container">
+          <a href="#" class="nav-logo">
+            <h2 class="logo-text">Portfolio</h2>
+          </a>
+
+          <ul class="nav-menu">
+            <button id="close-menu-button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="project.html" target="_blank" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#testimonial" class="nav-link">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <button id="open-menu-button">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="section-container">
+          <div class="hero-wrapper">
+            <div class="hero-details">
+              <div class="hero-greetings">Hi, I am</div>
+              <h2 class="hero-name">Lokesh Kumar Mishra</h2>
+              <h2 class="hero-role">B.TECH STUDENT</h2>
+              <p class="hero-bio">I am Lokesh Kumar Mishra, a second-year B.Tech Computer Science student at KIET Group of Institutions, Ghaziabad. I am passionate about coding, technology, and solving real-world problems through innovative projects. My journey in tech involves creating websites like Routemate, designed to simplify travel coordination, and Study Material, a platform developed with my team, Optimal Coders, to support immersive education.</p>
+              <div class="hero-buttons">
+                <button class="primary-button">Hire Me</button>
+                <button class="button">View Portfolio</button>
+              </div>
+            </div>
+
+            <div class="hero-image" >
+              <img src="Lokesh.jpg" alt="Yubi Pangali" class="profile-image" id="main-img"/>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section class="about-us" id="about">
+        <div class="section-container">
+          <div class="about-wrapper">
+            <div class="about-image"></div>
+
+            <div class="about-details">
+              <h2 class="section-title">Personal Details</h2>
+              <p class="about-description">I enjoy working on data structures and algorithms, often practicing on platforms like LeetCode and GeeksforGeeks using C++. Beyond coding, I have a keen interest in exploring advanced concepts such as sensors and measurement technology. My projects have been showcased in college events like Innotech Fest, where I focus on blending creativity and utility.</p>
+              <div class="social-media-links">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonial Section -->
+      <section class="testimonial" id="testimonial">
+        <div class="section-container">
+          <div class="section-title">Projects</div>
+          <div class="testimonial-slider swiper">
+            <div class="testimonial-wrapper">
+              <div class="testimonial-list swiper-wrapper">
+                <div class="testimonial-item swiper-slide">
+                  <p class="user-review">"Routemate is a website project idea you are working on that aims to group people based on their source and destination, facilitating shared travel opportunities. It's a data structures-based project, utilizing efficient algorithms to match users with similar travel routes. The platform is likely designed to promote cost-effective and eco-friendly travel by encouraging carpooling or shared transport."</p>
+                  <h3 class="user-name">Routemate</h3>
+                  <a href="indexRoutemate.html"><img src="routemate.png" alt="Routemate" class="user-imageLo" /></a>
+                  <!-- <h4 class="user-profession">Business Owner</h4> -->
+                </div>
+                <div class="testimonial-item swiper-slide">
+                  <p class="user-review">"EdTech, developed by Lokesh Kumar Mishra, is a forward-thinking initiative designed to revolutionize the learning experience. This platform aims to provide a seamless and inclusive environment where students and educators can access high-quality educational resources tailored to diverse needs."</p>
+                  <a href="indexEdutech.html"><img src="Edutech.png" alt="Edutech" class="user-imageLo" /></a>
+                  <h3 class="user-name">Edutech</h3>
+                  <!-- <h4 class="user-profession">UI/UX Designer</h4> -->
+                </div>
+                <div class="testimonial-item swiper-slide">
+                  <p class="user-review">"The simple calculator project, developed by Lokesh Kumar Mishra, is a fundamental tool showcasing the integration of core programming concepts and practical application. Designed with a clean and intuitive interface, this calculator provides users with essential arithmetic operations, ensuring quick and accurate calculations."</p>
+                  <a href="indexCalculator.html"><img src="Calculator.png" alt="Calculator" class="user-imageLo" /></a>
+                  <h3 class="user-name">Calculator</h3>
+                  <!-- <h4 class="user-profession">Digital Marketers</h4> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="slider-button swiper-button-prev"></div>
+            <div class="slider-button swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Service Section -->
+      <section class="service" id="service">
+        <div class="section-container">
+          <h2 class="section-title">My Services</h2>
+          <div class="service-list">
+            <div class="service-item">
+              <img src="images/web-design.png" alt="web design" class="service-icon" />
+              <h3 class="service-name">Web Design</h3>
+              <p class="service-description">Web design is the process of creating visually appealing and user-friendly websites. It combines layout, color schemes, and graphics to enhance user experience (UX).</p>
+            </div>
+            <div class="service-item">
+              <img src="images/web-development.png" alt="web Development" class="service-icon" />
+              <h3 class="service-name">Web Development</h3>
+              <p class="service-description">Web development involves building websites by using programming languages, frameworks, and tools. It includes front-end, back-end, and full-stack development.</p>
+            </div>
+            <div class="service-item">
+              <img src="images/icon-design.png" alt="Icon Design" class="service-icon" />
+              <h3 class="service-name">Icon Design</h3>
+              <p class="service-description">Icon design is the art of creating small, visually distinct graphics that represent actions, or concepts in a user interface.Effective icons are simple, and intuitive.</p>
+            </div>
+            <div class="service-item">
+              <img src="images/apps-interface.png" alt="App Interface" class="service-icon" />
+              <h3 class="service-name">App Interface</h3>
+              <p class="service-description">An app interface is the visual and interactive layer of an application that connects users to its functionality. It includes layouts, buttons, icons.</p>
+            </div>
+            <div class="service-item">
+              <img src="images/graphic-design.png" alt="Graphic Design" class="service-icon" />
+              <h3 class="service-name">Graphic Design</h3>
+              <p class="service-description">Graphic design is the craft of creating visual content to communicate messages. It combines typography, imagery, colors, and layout to produce designs.</p>
+            </div>
+            <div class="service-item">
+              <img src="images/SEO.png" alt="SEO" class="service-icon" />
+              <h3 class="service-name">SEO</h3>
+              <p class="service-description">Search Engine Optimization (SEO) is the practice of improving a website's visibility in search engine results. It involves optimizing content, keywords.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Testimonial Section -->
+      <section class="testimonial" id="testimonial">
+        <div class="section-container">
+          <div class="section-title">Testimonial</div>
+          <div class="testimonial-slider swiper">
+            <div class="testimonial-wrapper">
+              <div class="testimonial-list swiper-wrapper">
+                <div class="testimonial-item swiper-slide">
+                  <p class="user-review">"Web development helped bring my business online with a sleek and functional website. It's amazing how developers can turn ideas into a fully operational platform."</p>
+                  <img src="images/user-1.jpg" alt="John Davis" class="user-image" />
+                  <h3 class="user-name">John Davis</h3>
+                  <h4 class="user-profession">Business Owner</h4>
+                </div>
+                <div class="testimonial-item swiper-slide">
+                  <p class="user-review">"Graphic design brings creativity to the forefront. The visuals created for our brand were so eye-catching that they elevated our marketing campaigns significantly."</p>
+                  <img src="images/user-2.jpg" alt="Isabella White" class="user-image" />
+                  <h3 class="user-name">Isabella White</h3>
+                  <h4 class="user-profession">UI/UX Designer</h4>
+                </div>
+                <div class="testimonial-item swiper-slide">
+                  <p class="user-review">"Small icons, big impact! The custom icons for our app made it intuitive and user-friendly, while also giving it a professional look also much cleaner and moderns."</p>
+                  <img src="images/user-3.jpg" alt="Michael Smith" class="user-image" />
+                  <h3 class="user-name">Michael Smith</h3>
+                  <h4 class="user-profession">Digital Marketers</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="slider-button swiper-button-prev"></div>
+            <div class="slider-button swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact" id="contact">
+        <div class="section-container">
+          <div class="section-title">Contact</div>
+          <div class="contact-wrapper">
+            <form action="#">
+              <div class="name">
+                <input type="text" placeholder="First Name" required />
+                <input type="text" placeholder="Last Name" required />
+              </div>
+
+              <input class="input" type="email" placeholder="Your Email" />
+              <textarea placeholder="Message" required></textarea>
+              <button class="primary-button">Send Message</button>
+            </form>
+
+            <div class="contact-details">
+              <ul class="contact-info-list">
+                <li class="contact-info">
+                  <i class="fa-solid fa-location-crosshairs"></i>
+                  <p>Paris 09</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>+987 9879834</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>info@yoursite.com</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-solid fa-globe"></i>
+                  <p>www.yoursite.com</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <section class="footer">
+        <div class="section-container">
+          <p class="copyright-text">© 2024 Portfolio</p>
+
+          <div class="social-media-link">
+            <a href="#" class="social-link">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+
+          <div class="policy-text">
+            <a href="#" class="policy-link">Privacy policy</a>
+            <span>|</span>
+            <a href="#" class="policy-link">Refund policy</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Swiper JS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Adding custom script -->
+    <script src="script.js"></script>
+  </body>
+</html>

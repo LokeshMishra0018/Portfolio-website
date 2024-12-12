@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    /* background-color: black; */
+  }
+
+.header{
+    height: 150px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #030001;
+    font-size: xx-large;
+    color: white;
+
+
+}
+h1:hover{
+    /* height: 50px; */
+    color:white;
+    transition: 0.3s ease;
+    cursor: pointer;
+    scale: 1.2;
+}
+.container{
+    display: flex;
+    height: 300px;
+    /* justify-content: center; */
+    align-items: flex-end;
+    justify-content: space-around;
+    background-color: black
+    /* background-image: url("back.jpg");
+    background-size: cover; */
+}
+.box{
+    height: 200px;
+    width: 300px;
+    background-color:grey;
+    border:solid black 3px;
+    object-fit: contain;
+}
+.box:hover{
+  transform: translateY(-4px);
+  cursor: pointer;
+}
+.box a{
+    text-align: center;
+}
+.box p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    color:white;
+}
+.box p:hover{
+    color:red;
+    transition: 0.3s ease;
+}
+#ecom{
+    background-color: black;
+}
+.new{
+    height: 150px;
+    background-color: black;
+    text-align: center;
+}
+h2{
+    position: relative;
+    top:50px;
+    color: #ff6f00;
+    font-size: x-large;
+    cursor: pointer;
+}
+h2:hover{
+    scale: 1.2;
+    transition: 0.3s ease-in-out;
+
+}
+
+.social-icons {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+  }
+  
+  .social-icons a {
+    font-size: 30px;
+    margin: 0 20px;
+    color: #ff6f00;
+    transition: 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: red;
+    transform: translateY(-5px);
+  }
+
+.soc{
+    height: 50px;
+    background-color: black;
+    color: #ff6f00;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
